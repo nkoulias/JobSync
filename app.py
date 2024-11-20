@@ -4,9 +4,7 @@ import PyPDF2
 import os
 
 
-# Set your OpenAI API key
-# openai.api_key = os.getenv('OPENAI_API_KEY')
-openai.api_key = 'sk-proj-qTkGi4FM6ox6nwFb92hvT3BlbkFJVJMPco3Cgfkvrkqbj3rg'
+openai.api_key = st.secrets["api_key"]
 
 # Hide the settings and menu buttons using CSS
 st.set_page_config(page_title="JobSync", page_icon=":seedling:", menu_items=None)
